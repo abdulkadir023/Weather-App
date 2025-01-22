@@ -56,33 +56,8 @@ This application requires an API key from OpenWeatherMap. Follow these steps to 
 
 ## Screenshots
 
-![Desktop](./public/home.png)
+![Desktop](./public/Desktop.png)
 ![Mobile](./public/mobile.png)
-
-_Add screenshots of your application here to showcase its design and functionality._
-
-## Contributing
-
-Contributions are welcome! If you'd like to improve this project:
-
-1. Fork the repository.
-2. Create a new branch for your feature:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add feature-name"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
