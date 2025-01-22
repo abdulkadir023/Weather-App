@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+      }
+      img {
+        width: 40%;
+        height: auto;
+        margin-left: 32%;
+      }
+      .weather {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Montserrat", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .weatherDisplay {
+        margin-top: 3rem;
+      }
+      .search-again {
+        background-color: black;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        padding: 0.6em 0.9em;
+        border: none;
+        border-radius: 10px;
+        margin-left: 37%;
+      }
+      .search-again:hover {
+        background-color: rgb(26, 25, 25);
+      }
+      .search-again a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+
+      }
+      .weatherDisplay h1 {
+        font-family: "Fjalla One", serif;
+        font-weight: bold;
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #1deec1;
+      }
+      h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        color: white;
+        margin-top: 2rem;
+      }
+      h3 {
+        color: white;
+        padding: 1rem;
+      }
+      span {
+        color: #1deec1;
+        font-style: italic;
+      }
+      .weather-card {
+        margin-top: 10rem;
+        background-color: rgb(250, 250, 250);
+        width: 50%;
+        height: auto;
+        margin-left: 27%;
+      }
+    </style>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h3>Weather <span>Now</span></h3>
+    <div class="weather">
+      <div class="weatherDisplay">
+        <h1>Weather in <%= weather.name %>, <%= weather.sys.country %></h1>
+
+        <!-- Dynamic Weather Icon -->
+        <div class="weather-icon">
+          <img
+            src="http://openweathermap.org/img/wn/<%= weather.weather[0].icon %>@2x.png"
+            alt="Weather Icon"
+          />
+        </div>
+
+        <h2><%= weather.main.temp %>°C</h2>
+        <h2><%= weather.weather[0].description %></h2>
+        <!-- 
+        <div class="weather-card">
+          <p>Temperature: <%= weather.main.temp %>°C</p>
+          <p>Weather: <%= weather.weather[0].description %></p>
+          <p>Humidity: <%= weather.main.humidity %>%</p>
+          <p>Wind Speed: <%= weather.wind.speed %> m/s</p>
+        -->
+          <button class="search-again"><a href="/weather">Search again</a></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

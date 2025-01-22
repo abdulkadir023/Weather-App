@@ -1,0 +1,145 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(3, 2, 25) 0%,
+    rgb(17, 17, 178) 25%,
+    rgba(0, 212, 255, 1) 90%
+  );
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+.element h1 {
+  color: #2336b6;
+}
+.get-started {
+  margin-left: 50%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-form {
+  width: 50%; /* Use percentage for flexibility */
+  max-width: 400px; /* Optional: limit the width for large screens */
+  height: auto; /* Allow the height to adjust based on content */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #bde3ff; /* Background color for visibility */
+  box-sizing: border-box; /* Include padding in width/height */
+  margin-top: 7%; /* Center horizontally */
+  height: auto;
+  margin-bottom: 2rem;
+}
+label {
+  display: block;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+input {
+  display: block;
+  margin-bottom: 1rem;
+  font-style: italic;
+  text-align: center;
+  border: none;
+  margin: 0 auto;
+}
+
+.log-in-btn {
+  margin-top: 2.5rem;
+  border: none;
+  padding: 0.6em 0.9em;
+  background-color: #46c6f9;
+  font-weight: bold;
+  border-radius: 18px;
+  margin-left: 37%;
+}
+.sign-up-btn {
+  margin-top: 0.5rem;
+  border: none;
+  padding: 0.6em 0.9em;
+  background-color: #46c6f9;
+  font-weight: bold;
+  border-radius: 18px;
+  margin-left: 37%;
+}
+.check-weather-btn {
+  margin-top: 4rem;
+  border: none;
+  padding: 0.6em 0.9em;
+  background-color: black;
+  font-weight: bold;
+  border-radius: 18px;
+  margin-left: 45%;
+  color: white;
+}
+.user {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.welcome h3 {
+  color: white;
+  padding: 1rem;
+}
+
+span {
+  color: #1deec1;
+  font-style: italic;
+}
+
+.element h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 6rem;
+  margin-top: 10%;
+}
+.element p {
+  margin-top: 5rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #bde3ff;
+}
+
+.element button {
+  border: none;
+  padding: 1em;
+  margin-top: 4rem;
+  margin-left: 44%;
+  margin-bottom: 2rem;
+  background-color: #439fe1;
+  color: white;
+  font-size: 1.5rem;
+}
+.welcomeMsg label {
+  color: whitesmoke;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+}
+.welcomeMsg input {
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.welcomeMsg h1 {
+  color: whitesmoke;
+}
+.weatherDisplay {
+  background-color: #155e95;
+}

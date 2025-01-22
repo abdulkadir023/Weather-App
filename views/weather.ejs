@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+
+<div class="welcomeMsg">
+  <h1>Welcome, <span> <%= locals.updatedUsername %>! </span></h1>
+
+  <form action="/api/weather" method="post">
+    <label for="country code">Enter a Country</label>
+
+    <input
+      type="text"
+      name="country"
+      id="country"
+      placeholder="Enter Country"
+      required
+    />
+
+    <label for="city">Enter a City</label>
+
+    <input
+      type="text"
+      name="city"
+      id="city"
+      placeholder="Enter City"
+      required
+    />
+
+    <button class="check-weather-btn">Check Weather</button>
+  </form>
+</div>

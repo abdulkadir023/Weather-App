@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="sign-in-form">
+    <h1>Sign up</h1>
+    <form action="/signup" method="post">
+      <label for="Username">Username</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter email address"
+        required
+      />
+
+      <label for="Password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Enter password"
+        required
+      />
+
+      <label for="Confirm-password">Confirm-Password</label>
+      <input
+        type="password"
+        name="confirm"
+        id="confirm"
+        placeholder="Confirm password"
+        required
+      />
+
+      <p class="user">Already a User? <a href="/login">Log in</a></p>
+
+      <button class="sign-up-btn">Sign Up</button>
+    </form>
+  </div>
+</div>
